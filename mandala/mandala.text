@@ -1,0 +1,16 @@
+pos := proc(n)
+  local t,r:
+  t := 2*Pi*log[2](2*n+1):
+  r := log(n):
+  [r*cos(t), r*sin(t)];
+end:
+mandala := proc(N)
+  local points,left,right,spin:
+  points := plot(['pos(n)'$n=1..2^N-1],color=black,style=point,symbol=circle):
+  left   := plot(['[pos(n),pos(2*n)]'$n=1..2^(N-1)-1],color=red):
+  right  := plot(['[pos(n),pos(2*n+1)]'$n=1..2^(N-1)-1],color=blue):
+  spin   := plot([op(pos(2^t)),t=0..N],color=gray):
+  plots[display](points,left,right,spin,axes=none,scaling=constrained);
+end:
+mandala(8);
+

@@ -1,0 +1,17 @@
+{VERSION 6 0 "IBM INTEL LINUX" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "p:=t->a0+t*(a1+t*(a2+t*a3)):" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "A:=\{a0,a1,a2,a3\}:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "eqns:=\{p(0)=0,D(p)(0)=0,p(1
+)=1,D(p)(1)=0\}:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "solve(e
+qns,A);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#<&/%#a0G\"\"!/%#a1GF&/%#a3G
+!\"#/%#a2G\"\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}
+{MARK "5 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 
+33 1 1 }
