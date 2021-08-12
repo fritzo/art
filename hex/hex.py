@@ -52,7 +52,10 @@ def draw_board(size, canv):
     y += bit*cos(t)
     board[i] = x,y
   #draw_polygon(board, color.cmyk.White, canv)
-  def mid((a,b),(c,d)): return ((a+c)/2.0,(b+d)/2.0)
+  def mid(ab, cd):
+      a, b = ab
+      c, d = cd
+      return ((a+c)/2.0,(b+d)/2.0)
   draw_polygon(
       [
         mid(board[0],board[1]),
@@ -117,7 +120,7 @@ def save_board(size):
 if __name__ == "__main__":
   args = sys.argv
   if len(args) < 2:
-    print "usage: python hex.py SIZE"
+    print("usage: python hex.py SIZE")
   else:
     size = int(args[1])
     save_board(size)
